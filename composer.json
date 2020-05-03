@@ -1,0 +1,22 @@
+{
+    "name": "leafcutter/leafcutter-project",
+    "description": "Leafcutter project template.",
+    "autoload": {
+        "psr-4": {
+            "Site\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Joby Elliott",
+            "email": "code@byjoby.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "leafcutter/leafcutter": "*"
+    },
+    "type": "project",
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

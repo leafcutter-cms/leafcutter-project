@@ -1,0 +1,10 @@
+/vendor
+/composer.lock
+/debug.log
+/cache/*
+
+/web/assets/*
+/web/**/*.html
+env.yaml
+
+!.gitkeep
