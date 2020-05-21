@@ -11,9 +11,8 @@ date_default_timezone_set("America/Denver");
 //initialize configuration
 $config = new Config\Config();
 $config['base_dir'] = __DIR__;
-$config->readDir(__DIR__ . '/../config/');
-$config->readFile(__DIR__ . '/../env.yaml', null, true);
-$config['statics.directory'] = '${base_dir}/';
+$config->readDir(__DIR__ . '/../config/', null, true);
+$config->readFile(__DIR__ . '/../config/env.yaml', null, true);
 
 //initialize logger
 $logger = new Logger('leafcutter');
@@ -32,7 +31,6 @@ URLFactory::normalizeCurrent();
 Leafcutter::beginContext($config, $logger);
 $leafcutter = Leafcutter::get();
 $leafcutter->content()->addDirectory(__DIR__ . '/../content');
-$leafcutter->theme()->loadTheme('leafcutter-basic');
 
 //build response from URL
 $response = $leafcutter->buildResponse(URLFactory::current());

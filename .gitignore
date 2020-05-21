@@ -2,9 +2,10 @@
 /composer.lock
 /debug.log
 /cache/*
+!/cache/README.md
 
 /web/assets/*
+!/web/assets/README.md
 /web/**/*.html
-env.yaml
-
-!.gitkeep
+/config/env.yaml
+/config/env.*.yaml
