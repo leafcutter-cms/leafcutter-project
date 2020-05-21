@@ -1,0 +1,9 @@
+site:
+  # Site address must be properly specified here, or you'll get 404 errors
+  # Needs to have a trailing slash, and include the http/https://
+  url: 'http://localhost/site-template/web/'
+
+templates:
+  site:
+    # Site name to display in header/title
+    name: Demo Leafcutter site

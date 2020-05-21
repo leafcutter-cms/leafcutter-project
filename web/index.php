@@ -12,12 +12,19 @@ date_default_timezone_set("America/Denver");
 $config = new Config\Config();
 $config['base_dir'] = __DIR__;
 $config->readDir(__DIR__ . '/../config/', null, true);
-$config->readFile(__DIR__ . '/../config/env.yaml', null, true);
+if (is_file(__DIR__ . '/../config/env.yaml')) {
+    $config->readFile(__DIR__ . '/../config/env.yaml', null, true);
+}
 
 //initialize logger
 $logger = new Logger('leafcutter');
+if ($config['debug_log']) {
+    $logger->pushHandler(
+        new StreamHandler(__DIR__ . '/../logs/debug.log', Logger::DEBUG)
+    );
+}
 $logger->pushHandler(
-    new StreamHandler(__DIR__ . '/../debug.log', Logger::DEBUG)
+    new StreamHandler(__DIR__ . '/../logs/error.log', Logger::ERROR)
 );
 
 //initialize URL site and context

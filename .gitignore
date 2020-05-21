@@ -1,6 +1,6 @@
 /vendor
 /composer.lock
-/debug.log
+/logs/*.log
 /cache/*
 !/cache/README.md
 

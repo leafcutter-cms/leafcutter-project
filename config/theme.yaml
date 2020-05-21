@@ -1,36 +1,9 @@
-# Site address must be properly specified here, or you'll get 404 errors
-site:
-  url: 'http://localhost/site-template/web/'
-
-# Template settings
-templates:
-  site:
-    name: Demo Leafcutter site
-
-# Cache settings
-cache:
-  driver: filesystem
-  directory: '${base_dir}/../cache/'
-
-assets:
-  output:
-    directory: '${base_dir}/assets/'
-    url: '@/assets/'
-
-plugins:
-  system_staticpages:
-    enabled: false
-    ttl: 30
-
 theme:
-  css:
-    bundle: false
-    max_inlined: 0
-    minify: false
-  js:
-    bundle: false
-    minify: false
-    inline_loader: false
+  # this list activates theme packages, by default we just use core/basic
+  activate:
+    - core/basic
+  # these variables allow you to tweak your theme, provided it complies
+  # with the suggested theming practices to be config-aware.
   variables:
     # sizing
     margin: 2rem
