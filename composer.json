@@ -1,6 +1,6 @@
 {
-    "name": "leafcutter/leafcutter-project",
-    "description": "Leafcutter project template.",
+    "name": "leafcutter/site-template",
+    "description": "Leafcutter template for creating a site.",
     "autoload": {
         "psr-4": {
             "Site\\": "src"

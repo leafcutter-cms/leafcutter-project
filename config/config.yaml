@@ -1,6 +1,6 @@
 # Site address must be properly specified here, or you'll get 404 errors
 site:
-  url: 'http://localhost/leafcutter-project/web/'
+  url: 'http://localhost/site-template/web/'
 
 # Template settings
 templates:
