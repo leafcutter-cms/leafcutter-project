@@ -1,6 +1,6 @@
 # Including libraries
 
-To include libraries, you can add them to the page's meta comment, like so:
+To include libraries just for one page, you can add them to the page's meta comment, like so:
 
 ```html
 <!--@meta

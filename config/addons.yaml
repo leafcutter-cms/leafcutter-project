@@ -1,0 +1,6 @@
+addons:
+  activate:
+    - static-pages
+  config:
+    leafcutter/addon-static-pages:
+      enabled: false # static-pages is installed but disabled by default

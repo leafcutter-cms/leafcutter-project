@@ -1,0 +1,21 @@
+/*
+You can easily add CSS to your entire site here
+*/
+
+// these files include many useful SCSS mixins
+@import "@/~themes/theme-core/mixins/colors.scss";
+@import "@/~themes/theme-core/mixins/sizing.scss";
+
+#main-header,
+#main-breadcrumb,
+#main-footer {
+    @include text-muted;
+    @include uncolored-links;
+    text-align: center;
+}
+
+#main-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 35em;
+}
