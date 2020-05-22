@@ -15,7 +15,8 @@
     "license": "MIT",
     "require": {
         "leafcutter/leafcutter": "dev-master",
-        "leafcutter/theme-core": "dev-master"
+        "leafcutter/theme-core": "dev-master",
+        "leafcutter/theme-cdnjs": "*"
     },
     "type": "project",
     "minimum-stability": "dev",
