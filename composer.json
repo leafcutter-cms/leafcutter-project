@@ -16,8 +16,7 @@
     "require": {
         "leafcutter/leafcutter": "dev-main",
         "leafcutter/theme-core": "*",
-        "leafcutter/theme-cdnjs": "*",
-        "leafcutter/addon-static-pages": "*"
+        "leafcutter/theme-cdnjs": "*"
     },
     "type": "project",
     "minimum-stability": "dev",

@@ -1,7 +1,9 @@
 site:
   # Site address must be properly specified here, or you'll get 404 errors
-  # Needs to have a trailing slash, and include the http/https://
-  url: 'http://localhost/site-template/web/'
+  # Needs to have a trailing slash, and should include the http/https://
+  # if you would like to force a particular protocol.
+  # If left commented out, index.php will attempt to figure it out
+  # url: 'http://localhost/site-template/web/'
 
 templates:
   site:

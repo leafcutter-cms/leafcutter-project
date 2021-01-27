@@ -3,6 +3,8 @@
 /logs/*.log
 /cache/*
 !/cache/README.md
+/storage/*
+!/storage/README.md
 
 /web/assets/*
 !/web/assets/README.md

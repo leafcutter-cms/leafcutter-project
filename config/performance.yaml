@@ -1,6 +1,8 @@
 cache:
-  # set driver to "ephemeral" to disable caching
-  driver: filesystem
+  # caching is set to "ephemeral" by default, because that is fast enough
+  # for most small sites. If your site begins to feel slow, you should change
+  # this to "filesystem" to enable caching.
+  driver: ephemeral
   ttl:
     # time to cache content folder searches, should be fairly short
     content: 60
